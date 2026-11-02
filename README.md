@@ -118,3 +118,4 @@ python test_scenarios.py             # End-to-end Cash Flow & Savings Settling
 
 ## 📄 License
 MIT License. Free for personal and commercial use.
+
