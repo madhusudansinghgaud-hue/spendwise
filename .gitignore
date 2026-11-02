@@ -1,0 +1,45 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+ENV/
+
+# Node Modules & Frontend Builds
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+build/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+.coverage
+htmlcov/
+
+# Local Databases & State
+backend/*.db
+backend/*.sqlite
+backend/*.sqlite3
+*.db
+*.sqlite
+*.sqlite3
+
+# Binaries & Downloads
+*.exe
+cloudflared.exe
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+
+# IDE & Editor settings
+.vscode/
+.idea/
+.DS_Store
+*.log
+scratch/
+scratch_*

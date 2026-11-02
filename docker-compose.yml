@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  spendwise:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: spendwise-production
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - ENVIRONMENT=production
+      - DATABASE_URL=sqlite:////app/data/spendwise.db
+    volumes:
+      - spendwise_data:/app/data
+
+volumes:
+  spendwise_data:

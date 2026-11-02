@@ -1,0 +1,5 @@
+import os
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+import database
+database.run_migrations()
+print("Migrations done.")
